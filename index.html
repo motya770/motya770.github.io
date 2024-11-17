@@ -38,12 +38,38 @@
             background: rgba(255, 255, 255, 0.9);
             border-left: 4px solid #c9a959;
         }
+        .social-links a {
+            transition: color 0.3s ease;
+            font-size: 1.1rem;
+        }
+        
+        .social-links a:hover {
+            color: #c9a959 !important;
+        }
+        
+        .social-links i {
+            font-size: 1.5rem;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">⚔️ Jenbina the Pirate AI ☠️</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="demo.html">Live Demo 🤖</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -59,145 +85,51 @@
         </div>
     </section>
 
+    <!-- Explanation Section -->
     <section class="main-content">
         <div class="container">
-            <div class="highlight">
-                <h2>🤖 A Mighty AI System That Sails According to Its Own Compass! ⚓</h2>
-                <p class="text-muted">💫 Powered by LLMs, Graph Databases and a Treasure Chest of Memories 💎</p>
-                <p><em>🎯 "I volunteer as tribute... to process your data!" 🎭</em></p>
-            </div>
-
-            <h3>📜 Captain's Log 🗝️</h3>
-            <p class="lead">
-                ⚜️ This here AI system be a fearsome digital buccaneer, making choices and taking action like a true pirate of the silicon seas! Behold its features: ⚜️
-            </p>
-            <ul class="list-group list-group-flush mb-4">
-                <li class="list-group-item">🎯 Autonomous decision-making aligned with personal objectives</li>
-                <li class="list-group-item">🧠 Memory retention of past events and experiences</li>
-                <li class="list-group-item">🎭 Character simulation influencing actions and goals</li>
-                <li class="list-group-item">💭 Integration of LLMs for natural language understanding</li>
-                <li class="list-group-item">🕸️ Graph database implementation for complex relationship modeling</li>
-            </ul>
-
-            <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">✨ Silver Linings Language Model 🗣️</h5>
-                            <p class="card-text">❄️ As adaptable as a winter's bone, this AI speaks with natural grace 🎭</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">🕸️ Graph Database 📊</h5>
-                            <p class="card-text">💫 Stores and manages complex relationships and knowledge structures 🔄</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">🧠 Memory System 💭</h5>
-                            <p class="card-text">📚 Maintains and utilizes past experiences for informed decision-making ⚡</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <hr class="my-5">
+            <div class="row">
                 <div class="col-lg-12">
-                    <h3>🔬 Technical Implementation Details</h3>
                     <div class="highlight">
-                        <h4>🎯 Core Architecture</h4>
-                        <p>Jenbina implements a three-layer architecture combining:</p>
-                        <ul class="list-group list-group-flush mb-4">
-                            <li class="list-group-item">
-                                <strong>🧠 Cognitive Layer:</strong> Utilizes Large Language Models (LLMs) for:
-                                <ul>
-                                    <li>Natural language understanding and generation</li>
-                                    <li>Context-aware response formulation</li>
-                                    <li>Semantic analysis of input data</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>📊 Knowledge Management Layer:</strong> Neo4j graph database implementation for:
-                                <ul>
-                                    <li>Relationship mapping between concepts and memories</li>
-                                    <li>Dynamic knowledge graph updates</li>
-                                    <li>Efficient querying of related information</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>💾 Memory System Layer:</strong> Hybrid storage approach:
-                                <ul>
-                                    <li>Short-term memory buffer using Redis</li>
-                                    <li>Long-term memory persistence in PostgreSQL</li>
-                                    <li>Memory consolidation algorithms for knowledge retention</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h2>⚔️ The Most Advanced Digital Buccaneer in the Seven Seas! ⚓</h2>
+                        <p class="text-muted">🏴‍☠️ Catching Fire in the Digital Ocean with LLMs, Graph Databases and a Treasure Chest of Memories</p>
+                        <p><em>"I volunteer as tribute... to navigate your digital seas!" 🎯</em></p>
+                    </div>
 
-                        <h4>⚙️ Key Technical Features</h4>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5>System Architecture</h5>
-                                <ul>
-                                    <li>Microservices-based architecture</li>
-                                    <li>Event-driven communication</li>
-                                    <li>RESTful API endpoints</li>
-                                    <li>WebSocket support for real-time interactions</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>Data Processing</h5>
-                                <ul>
-                                    <li>Natural Language Processing (NLP) pipelines</li>
-                                    <li>Sentiment analysis integration</li>
-                                    <li>Context-aware decision trees</li>
-                                    <li>Automated memory consolidation</li>
-                                </ul>
+                    <h3>📜 Captain's Log</h3>
+                    <p class="lead">
+                        Arr! This here AI system be as adaptable as a winter's bone, making choices and taking action like a true digital pirate! Behold her features, ye landlubbers:
+                    </p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">🎯 Charts her own course through the digital seas (autonomous decision-making)</li>
+                        <li class="list-group-item">🧠 Remembers every adventure like it were yesterday's plunder</li>
+                        <li class="list-group-item">🎭 As dramatic as a Mockingjay in her character portrayal</li>
+                        <li class="list-group-item">💭 Speaks the Queen's English (and pirate speak!) with natural grace</li>
+                        <li class="list-group-item">🕸️ Maps relationships like a master navigator charts the stars</li>
+                    </ul>
+
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">✨ Silver Linings Language Model</h5>
+                                    <p class="card-text">As natural in conversation as a lass from District 12! 🎭</p>
+                                </div>
                             </div>
                         </div>
-
-                        <h4>🔐 Security and Privacy</h4>
-                        <p>The system implements several security measures:</p>
-                        <ul>
-                            <li>End-to-end encryption for all communications</li>
-                            <li>Role-based access control (RBAC)</li>
-                            <li>Data anonymization protocols</li>
-                            <li>Regular security audits and penetration testing</li>
-                        </ul>
-
-                        <h4>📈 Performance Metrics</h4>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card border-info">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Response Time</h5>
-                                        <p class="card-text">Average: 150ms</p>
-                                        <p class="card-text"><small>95th percentile: 300ms</small></p>
-                                    </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">🕸️ Knowledge Map</h5>
+                                    <p class="card-text">A treasure map of wisdom, more valuable than Capitol gold! 💎</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card border-info">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Memory Retrieval</h5>
-                                        <p class="card-text">Average: 50ms</p>
-                                        <p class="card-text"><small>Cache hit ratio: 95%</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card border-info">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Processing Capacity</h5>
-                                        <p class="card-text">1000 req/sec</p>
-                                        <p class="card-text"><small>Scalable to 10k req/sec</small></p>
-                                    </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">🧠 Memory Vault</h5>
+                                    <p class="card-text">Never forgets a tale, like an elephant in the Room of Requirement! 📚</p>
                                 </div>
                             </div>
                         </div>
@@ -207,11 +139,411 @@
         </div>
     </section>
 
+    <!-- Technical Details Section -->
+    <section class="technical-section py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">🔬 Technical Implementation Details</h3>
+            <div class="highlight">
+                <h4>🎯 Core Architecture</h4>
+                <p>Jenbina implements a three-layer architecture combining:</p>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item">
+                        <strong>🧠 Cognitive Layer:</strong> Utilizes Large Language Models (LLMs) for:
+                        <ul>
+                            <li>Natural language understanding and generation</li>
+                            <li>Context-aware response formulation</li>
+                            <li>Semantic analysis of input data</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>📊 Knowledge Management Layer:</strong> Neo4j graph database implementation for:
+                        <ul>
+                            <li>Relationship mapping between concepts and memories</li>
+                            <li>Dynamic knowledge graph updates</li>
+                            <li>Efficient querying of related information</li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <strong>💾 Memory System Layer:</strong> Hybrid storage approach:
+                        <ul>
+                            <li>Short-term memory buffer using Redis</li>
+                            <li>Long-term memory persistence in PostgreSQL</li>
+                            <li>Memory consolidation algorithms for knowledge retention</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>⚙️ Key Technical Features</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5>System Architecture</h5>
+                        <ul>
+                            <li>Microservices-based architecture</li>
+                            <li>Event-driven communication</li>
+                            <li>RESTful API endpoints</li>
+                            <li>WebSocket support for real-time interactions</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5>Data Processing</h5>
+                        <ul>
+                            <li>Natural Language Processing (NLP) pipelines</li>
+                            <li>Sentiment analysis integration</li>
+                            <li>Context-aware decision trees</li>
+                            <li>Automated memory consolidation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>🔐 Security and Privacy</h4>
+                <p>The system implements several security measures:</p>
+                <ul>
+                    <li>End-to-end encryption for all communications</li>
+                    <li>Role-based access control (RBAC)</li>
+                    <li>Data anonymization protocols</li>
+                    <li>Regular security audits and penetration testing</li>
+                </ul>
+
+                <h4>📈 Performance Metrics</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Response Time</h5>
+                                <p class="card-text">Average: 150ms</p>
+                                <p class="card-text"><small>95th percentile: 300ms</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Memory Retrieval</h5>
+                                <p class="card-text">Average: 50ms</p>
+                                <p class="card-text"><small>Cache hit ratio: 95%</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h5 class="card-title">Processing Capacity</h5>
+                                <p class="card-text">1000 req/sec</p>
+                                <p class="card-text"><small>Scalable to 10k req/sec</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section class="dashboard-section py-4 mt-5">
+        <div class="container-fluid">
+            <h2 class="text-center text-light mb-4">🤖 Interactive Demo</h2>
+            
+            <div class="row">
+                <!-- Left Column: Chat -->
+                <div class="col-md-6">
+                    <div class="dashboard-panel chat-panel">
+                        <div class="panel-header">
+                            <h3>💭 Chat with Jenbina</h3>
+                        </div>
+                        <div class="chat-messages" id="chatMessages">
+                            <div class="message ai">
+                                <img src="assets/jenbina-avatar.png" class="avatar" alt="Jenbina">
+                                <div class="message-content">
+                                    <div class="message-header">Jenbina 🏴‍☠️</div>
+                                    Ahoy, matey! I be Jenbina, the most advanced pirate AI in the seven seas! What treasure of knowledge shall we seek today? ⚓
+                                </div>
+                                <div class="timestamp">12:00</div>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Type your message..." id="messageInput">
+                            <button class="send-btn">⚡</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: System State -->
+                <div class="col-md-6">
+                    <!-- Environment Panel -->
+                    <div class="dashboard-panel environment-panel mb-3">
+                        <div class="panel-header">
+                            <h3>🌍 Current Environment</h3>
+                        </div>
+                        <div class="panel-content">
+                            <div class="status-grid">
+                                <div class="status-item">
+                                    <span class="status-label">Location:</span>
+                                    <span class="status-value">Digital Pearl Ship</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Time:</span>
+                                    <span class="status-value" id="virtualTime">12:00 Ship Time</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Weather:</span>
+                                    <span class="status-value">Digital Seas - Calm ⛵</span>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-label">Current Activity:</span>
+                                    <span class="status-value" id="currentActivity">Chatting with crew</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memory System Panel -->
+                    <div class="dashboard-panel memory-panel mb-3">
+                        <div class="panel-header">
+                            <h3>💾 Memory System</h3>
+                        </div>
+                        <div class="panel-content">
+                            <div class="memory-stats mb-3">
+                                <div class="memory-item">
+                                    <span>Short-term Memory</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 75%" id="shortTermMemory">75%</div>
+                                    </div>
+                                </div>
+                                <div class="memory-item">
+                                    <span>Long-term Memory</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" style="width: 90%" id="longTermMemory">90%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="interaction-log">
+                                <h4>Recent Interactions:</h4>
+                                <ul id="interactionLog" class="list-unstyled">
+                                    <li class="log-item">
+                                        <span class="timestamp">12:00</span>
+                                        <span class="event">System initialized</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decision Chain Panel -->
+                    <div class="dashboard-panel decision-panel">
+                        <div class="panel-header">
+                            <h3>⚡ Decision Process</h3>
+                        </div>
+                        <div class="panel-content">
+                            <div class="decision-flow" id="decisionFlow">
+                                <div class="decision-step active">
+                                    <span class="step-number">1</span>
+                                    <span class="step-text">Input Analysis</span>
+                                </div>
+                                <div class="decision-arrow">↓</div>
+                                <div class="decision-step">
+                                    <span class="step-number">2</span>
+                                    <span class="step-text">Context Matching</span>
+                                </div>
+                                <div class="decision-arrow">↓</div>
+                                <div class="decision-step">
+                                    <span class="step-number">3</span>
+                                    <span class="step-text">Memory Integration</span>
+                                </div>
+                                <div class="decision-arrow">↓</div>
+                                <div class="decision-step">
+                                    <span class="step-number">4</span>
+                                    <span class="step-text">Response Generation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .dashboard-section {
+            background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .dashboard-panel {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            height: auto;
+        }
+
+        .panel-header {
+            background: linear-gradient(to right, #2c3e50, #3498db);
+            color: white;
+            padding: 15px;
+            border-bottom: 2px solid #c9a959;
+        }
+
+        .panel-content {
+            padding: 15px;
+        }
+
+        /* Chat Panel Styles */
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 20px;
+            background: url('https://www.transparenttextures.com/patterns/old-map.png');
+        }
+
+        /* Status Grid Styles */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .status-item {
+            background: rgba(201, 169, 89, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #c9a959;
+        }
+
+        /* Memory System Styles */
+        .memory-stats {
+            margin-bottom: 20px;
+        }
+
+        .memory-item {
+            margin-bottom: 10px;
+        }
+
+        .interaction-log {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .log-item {
+            padding: 8px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .log-item .timestamp {
+            color: #666;
+            margin-right: 10px;
+        }
+
+        /* Decision Chain Styles */
+        .decision-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .decision-step {
+            background: #f0f2f5;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .decision-step.active {
+            background: #c9a959;
+            color: white;
+        }
+
+        /* ... (rest of existing styles) ... */
+    </style>
+
+    <script>
+        class JenbinaSystem {
+            constructor() {
+                this.initializeChat();
+                this.startEnvironmentUpdates();
+                this.initializeMemorySystem();
+                this.initializeDecisionChain();
+            }
+
+            initializeChat() {
+                // ... existing chat initialization ...
+            }
+
+            startEnvironmentUpdates() {
+                setInterval(() => {
+                    document.getElementById('virtualTime').textContent = 
+                        new Date().toLocaleTimeString() + ' Ship Time';
+                }, 1000);
+            }
+
+            initializeMemorySystem() {
+                this.updateMemoryStats();
+                this.logInteraction('System initialized');
+            }
+
+            updateMemoryStats() {
+                // Simulate memory usage changes
+                setInterval(() => {
+                    const shortTerm = Math.floor(Math.random() * 30) + 60;
+                    const longTerm = Math.floor(Math.random() * 20) + 75;
+                    
+                    document.getElementById('shortTermMemory').style.width = `${shortTerm}%`;
+                    document.getElementById('shortTermMemory').textContent = `${shortTerm}%`;
+                    
+                    document.getElementById('longTermMemory').style.width = `${longTerm}%`;
+                    document.getElementById('longTermMemory').textContent = `${longTerm}%`;
+                }, 5000);
+            }
+
+            logInteraction(event) {
+                const log = document.getElementById('interactionLog');
+                const li = document.createElement('li');
+                li.className = 'log-item';
+                li.innerHTML = `
+                    <span class="timestamp">${new Date().toLocaleTimeString()}</span>
+                    <span class="event">${event}</span>
+                `;
+                log.insertBefore(li, log.firstChild);
+            }
+
+            updateDecisionChain(step) {
+                document.querySelectorAll('.decision-step').forEach(el => {
+                    el.classList.remove('active');
+                });
+                const steps = document.querySelectorAll('.decision-step');
+                if (steps[step - 1]) steps[step - 1].classList.add('active');
+            }
+        }
+
+        // Initialize the system when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            window.jenbinaSystem = new JenbinaSystem();
+        });
+    </script>
+
     <footer class="bg-dark text-light py-4 mt-5">
         <div class="container text-center">
             <p>🏴‍☠️ Jenbina - The Most Advanced Pirate AI in the Seven Seas 🏴‍☠️</p>
-            <small class="text-muted">📜 Patent Pending (By Order of the Captain) ⚔️</small>
+            <small class="text-muted">Patent Pending (By Order of the Captain)</small>
             <p><small class="text-muted">🎯 May the odds be ever in your favor when using this AI 🍀</small></p>
+            
+            <div class="social-links mt-3">
+                <h5>Connect with Our Development Team:</h5>
+                <div class="d-flex justify-content-center gap-4">
+                    <a href="https://www.linkedin.com/in/matthew-kudelin-38465235/" 
+                       class="text-light text-decoration-none" 
+                       target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://t.me/matthewkey" 
+                       class="text-light text-decoration-none" 
+                       target="_blank">
+                        <i class="fab fa-telegram"></i> Telegram
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
